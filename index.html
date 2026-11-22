@@ -1,217 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NOVA GYM: conoce nuestro gimnasio y explora una tienda de suplementos deportivos organizada por categorías.">
-  <title>NOVA GYM | Suplementos deportivos</title>
-  <!-- Usamos la misma hoja de estilos que el formulario del equipo. -->
-  <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA GYM | Contacto y Pedidos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a class="enlace-saltar" href="#contenido-principal">Saltar al contenido principal</a>
 
-  <header class="encabezado" id="inicio">
-    <div class="contenedor encabezado-contenido">
-      <a class="marca" href="index.html" aria-label="NOVA GYM, ir a inicio">
-        <span class="marca-nombre">NOVA <strong>GYM</strong></span>
-        <span class="marca-descripcion">Entrenamiento y nutrición deportiva</span>
-      </a>
-
-      <nav class="navegacion" aria-label="Navegación principal">
-        <ul class="navegacion-lista">
-          <li><a href="index.html" aria-current="page">Inicio</a></li>
-          <li><a href="#categorias">Categorías</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#nosotros">Nuestro gym</a></li>
-          <li><a class="boton boton-nav" href="formulario.html">Contacto / pedidos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="contenido-principal">
-    <!-- Presentación principal de la tienda. -->
-    <section class="hero" aria-labelledby="hero-titulo">
-      <div class="contenedor hero-contenido">
-        <div class="hero-texto">
-          <p class="etiqueta">TU TIENDA FITNESS</p>
-          <h1 id="hero-titulo">Todo para acompañar tu próximo entrenamiento.</h1>
-          <p>Descubre proteínas, creatinas y pre-entrenos en un solo lugar. Explora nuestro catálogo y encuentra lo que buscas de manera sencilla.</p>
-          <div class="hero-acciones">
-            <a class="boton boton-primario" href="#productos">Ver suplementos</a>
-            <a class="boton boton-secundario" href="#nosotros">Conoce el gimnasio</a>
-          </div>
+    <header>
+        <div class="logo">
+            <h1>NOVA<span>GYM</span></h1>
+            <p>Entrenamiento y nutrición deportiva</p>
         </div>
-        <figure class="hero-imagen">
-          <img
-            src="https://images.unsplash.com/photo-1693996045838-980674653385?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
-            alt="Envases de suplementos deportivos junto a una licuadora"
-            width="1000" height="700" fetchpriority="high">
-          <figcaption>Una selección de nutrición deportiva para tus rutinas.</figcaption>
-        </figure>
-      </div>
-    </section>
+    </header>
 
-    <!-- Enlaces rápidos: cada opción lleva a una sección de productos. -->
-    <section class="seccion categorias" id="categorias" aria-labelledby="categorias-titulo">
-      <div class="contenedor">
-        <p class="etiqueta">COMPRA POR TIPO</p>
-        <h2 id="categorias-titulo">Explora nuestras categorías</h2>
-        <p class="seccion-descripcion">Organizamos los suplementos para que puedas comparar las opciones más fácilmente.</p>
-        <ul class="categorias-lista">
-          <li><a class="categoria-enlace" href="#proteinas"><span>01</span> Proteínas <span aria-hidden="true">→</span></a></li>
-          <li><a class="categoria-enlace" href="#creatinas"><span>02</span> Creatinas <span aria-hidden="true">→</span></a></li>
-          <li><a class="categoria-enlace" href="#preentrenos"><span>03</span> Pre-entrenos <span aria-hidden="true">→</span></a></li>
-        </ul>
-      </div>
-    </section>
+    <section class="contenedor-formulario">
 
-    <section class="seccion catalogo" id="productos" aria-labelledby="productos-titulo">
-      <div class="contenedor">
-        <p class="etiqueta">NUESTRO CATÁLOGO</p>
-        <h2 id="productos-titulo">Suplementos destacados</h2>
-        <p class="seccion-descripcion">Conoce las opciones disponibles por categoría. Esta es una muestra visual del catálogo del proyecto.</p>
-
-        <section class="grupo-productos" id="proteinas" aria-labelledby="proteinas-titulo">
-          <div class="grupo-encabezado">
-            <h3 id="proteinas-titulo">Proteínas</h3>
-            <p>Opciones de proteína en polvo para complementar tu alimentación.</p>
-          </div>
-          <div class="productos-cuadricula">
-            <article class="producto-tarjeta">
-              <img src="https://images.unsplash.com/photo-1693996045346-d0a9b9470909?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
-                   alt="Envase ilustrativo de proteína en polvo con cuchara medidora"
-                   width="720" height="560" loading="lazy">
-              <div class="producto-informacion">
-                <p class="producto-tipo">Proteína</p>
-                <h4>Whey Protein · Vainilla</h4>
-                <p>Presentación de referencia de 2 lb.</p>
-                <p class="producto-precio">RD$ 2,850</p>
-                <a class="boton boton-comprar" href="formulario.html" aria-label="Solicitar Whey Protein de vainilla">Solicitar producto</a>
-              </div>
-            </article>
-
-            <article class="producto-tarjeta">
-              <img src="https://images.unsplash.com/photo-1704650311190-7eeb9c4f6e11?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
-                   alt="Presentación ilustrativa de proteína en polvo sabor chocolate"
-                   width="720" height="560" loading="lazy">
-              <div class="producto-informacion">
-                <p class="producto-tipo">Proteína</p>
-                <h4>Whey Protein · Chocolate</h4>
-                <p>Presentación de referencia de 2 lb.</p>
-                <p class="producto-precio">RD$ 2,850</p>
-                <a class="boton boton-comprar" href="formulario.html" aria-label="Solicitar Whey Protein de chocolate">Solicitar producto</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="grupo-productos" id="creatinas" aria-labelledby="creatinas-titulo">
-          <div class="grupo-encabezado">
-            <h3 id="creatinas-titulo">Creatinas</h3>
-            <p>Encuentra diferentes presentaciones de creatina para tu rutina.</p>
-          </div>
-          <div class="productos-cuadricula">
-            <article class="producto-tarjeta">
-              <img src="https://images.unsplash.com/photo-1693996045838-980674653385?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
-                   alt="Fotografía ilustrativa de varios envases de suplementos, incluida creatina"
-                   width="720" height="560" loading="lazy">
-              <div class="producto-informacion">
-                <p class="producto-tipo">Creatina</p>
-                <h4>Creatina monohidratada</h4>
-                <p>Presentación de referencia de 300 g.</p>
-                <p class="producto-precio">RD$ 1,450</p>
-                <a class="boton boton-comprar" href="formulario.html" aria-label="Solicitar creatina monohidratada">Solicitar producto</a>
-              </div>
-            </article>
-
-            <article class="producto-tarjeta">
-              <img src="https://images.unsplash.com/photo-1693996045300-521e9d08cabc?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
-                   alt="Envase ilustrativo de suplemento deportivo en polvo"
-                   width="720" height="560" loading="lazy">
-              <div class="producto-informacion">
-                <p class="producto-tipo">Creatina</p>
-                <h4>Creatina micronizada</h4>
-                <p>Presentación de referencia de 500 g.</p>
-                <p class="producto-precio">RD$ 2,100</p>
-                <a class="boton boton-comprar" href="formulario.html" aria-label="Solicitar creatina micronizada">Solicitar producto</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="grupo-productos" id="preentrenos" aria-labelledby="preentrenos-titulo">
-          <div class="grupo-encabezado">
-            <h3 id="preentrenos-titulo">Pre-entrenos</h3>
-            <p>Productos de nutrición deportiva pensados para la etapa previa al ejercicio.</p>
-          </div>
-          <div class="productos-cuadricula">
-            <article class="producto-tarjeta">
-              <img src="https://images.unsplash.com/photo-1693996045838-980674653385?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
-                   alt="Selección ilustrativa de suplementos deportivos en envases"
-                   width="720" height="560" loading="lazy">
-              <div class="producto-informacion">
-                <p class="producto-tipo">Pre-entreno</p>
-                <h4>Pre-Workout Energy</h4>
-                <p>Presentación de referencia de 30 porciones.</p>
-                <p class="producto-precio">RD$ 1,750</p>
-                <a class="boton boton-comprar" href="formulario.html" aria-label="Solicitar Pre-Workout Energy">Solicitar producto</a>
-              </div>
-            </article>
-
-            <article class="producto-tarjeta">
-              <img src="https://images.unsplash.com/photo-1775199603318-7f8a9a63b40d?auto=format&amp;fit=crop&amp;w=720&amp;q=80"
-                   alt="Envase de proteína y vaso mezclador usados como imagen ilustrativa de la categoría"
-                   width="720" height="560" loading="lazy">
-              <div class="producto-informacion">
-                <p class="producto-tipo">Pre-entreno</p>
-                <h4>Pre-Workout Focus</h4>
-                <p>Presentación de referencia de 30 porciones.</p>
-                <p class="producto-precio">RD$ 1,890</p>
-                <a class="boton boton-comprar" href="formulario.html" aria-label="Solicitar Pre-Workout Focus">Solicitar producto</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <p class="nota-catalogo"><strong>Nota académica:</strong> nombres, fotografías y precios de muestra para la maquetación. Las imágenes son ilustrativas; no representan necesariamente los envases reales.</p>
-      </div>
-    </section>
-
-    <section class="seccion sobre-nosotros" id="nosotros" aria-labelledby="nosotros-titulo">
-      <div class="contenedor sobre-nosotros-contenido">
-        <div>
-          <p class="etiqueta">MÁS QUE UNA TIENDA</p>
-          <h2 id="nosotros-titulo">Entrenamiento y suplementos en un mismo espacio.</h2>
+        <div class="titulo">
+            <h2>Solicitud de contacto / pedido</h2>
+            <p>Completa los siguientes datos y nos pondremos en contacto contigo.</p>
         </div>
-        <div>
-          <p>En NOVA GYM queremos reunir la motivación por el entrenamiento con un catálogo de nutrición deportiva fácil de explorar.</p>
-          <p>Esta primera versión presenta la página de inicio, las categorías de productos y el acceso al formulario del proyecto.</p>
-          <a class="boton boton-secundario" href="formulario.html">Ir al formulario</a>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="pie-pagina">
-    <div class="contenedor pie-contenido">
-      <div>
-        <p class="pie-marca">NOVA GYM</p>
-        <p>Proyecto académico · Desarrollo de Aplicaciones Web (ISW-306).</p>
-      </div>
-      <nav aria-label="Navegación de pie de página">
-        <ul class="pie-enlaces">
-          <li><a href="#inicio">Volver arriba</a></li>
-          <li><a href="#categorias">Categorías</a></li>
-          <li><a href="formulario.html">Formulario</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="contenedor pie-legal">
-      <small>&copy; 2026 NOVA GYM · Maquetación de práctica, sin ventas ni pagos en línea.</small>
-      <small>Fotografías ilustrativas: <a href="https://unsplash.com/@alexsaks" target="_blank" rel="noopener noreferrer">Alex Saks / Unsplash</a>.</small>
-    </div>
-  </footer>
+        <form action="#" method="post">
+
+            <div class="grupo">
+                <label>Nombre Completo</label>
+                <input type="text" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="grupo">
+                <label>Correo Electrónico</label>
+                <input type="email" placeholder="ejemplo@gmail.com">
+            </div>
+
+            <div class="grupo">
+                <label>Teléfono</label>
+                <input type="tel" placeholder="809-000-0000">
+            </div>
+
+            <div class="grupo">
+                <label>Producto de interés</label>
+                <select>
+                    <option>Seleccione una opción</option>
+                    <option>Proteína Whey</option>
+                    <option>Creatina</option>
+                    <option>Pre-entreno</option>
+                    <option>Asesoría nutricional</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Cantidad</label>
+                <input type="number" min="1" placeholder="Cantidad deseada">
+            </div>
+
+            <div class="grupo">
+                <label>Mensaje</label>
+                <textarea rows="5" placeholder="Escribe aquí tus comentarios..."></textarea>
+            </div>
+
+            <button type="submit">
+                Enviar Solicitud
+            </button>
+
+        </form>
+
+    </section>
+
 </body>
 </html>
